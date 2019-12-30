@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+/* navigation bar */
+.clr{
+	clear: both;
+}
+.bg-light{
+	background: rgba(12,12,13,0.78) !important;
+	
+}
+
+ .navbar-brand{
+ 	margin-right:400px;
+
+ }
+
+.navbar-nav{
+	
+	
+}
+.navbar-light .navbar-nav .nav-link {
+	padding: 11px 19px;
+	text-transform: uppercase;
+	color: #ffa500 !important;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	transition:0.8s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color:white;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:#ffa500;
+}
+.navbar-nav .nav-item .nav-link:hover{
+ color:orange;
+ border-bottom:3px solid orange;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-l{
+	color:orange !important;
+}
+.white{
+	background:#fff;
+	padding-top: 10px;
+}
+.navbar-light .navbar-brand {
+    color: #ffa500;
+}
+/* owl-carousel */
+.carousel-item{
+	height:100vh;
+
+}
+/* about */
+.w-100 {
+    width: 100%!important;
+    height: 100vh;
+}
+#menu_body{
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.7)),url(../images/02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+    margin-top: 68px;
+}
+.tab-content>.active {
+    display: block;
+    background: white;
+    min-height: 600px;
+    box-shadow: 2px -1px 5px 0px #adacac;
+    background-color: #f9f0f0;
+}
+.nav-pills .nav-link {
+    border-radius: .25rem;
+    font-size: 30px;
+    color: #ffa500;
+}
+.menu_motto {
+    padding-top:23em;
+    text-align: center;
+    color: white;
+
+}
+.menu_motto h3 span{
+  color: #ffa500;
+
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 25px;
+    margin-top: 16px;
+    border-radius: 40px;
+    background-color: rgba(0,0,0,.075);
+    color: #ffa500;
+    
+}
+
+/*about*/
+#about{
+	padding-top: 20px;
+}
+.about-title{
+	display:flex;
+	justify-content:center;
+	font-family:'Open Sans',sans-serif;
+	text-transform: uppercase;
+	font-weight:600;
+	font-size:16px;
+	padding-top: 5px;
+    color: #ffa500;
+
+}
+.about-title::before{
+	content: url(../images/hd.png);
+    margin: 14px;
+    
+    vertical-align: text-bottom;
+}
+.about-title::after{
+	content: url(../images/hd.png);
+    margin: 14px;
+    
+    vertical-align: text-bottom;
+}
+
+.fline ,.sline{
+     align-content: center;
+
+}
+.sline{
+	margin-left:50px;
+}
+.bg1{
+	margin-top:20px;
+	background:url('../images/car3.jpg'); width:100%;min-height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg1-head{
+	display: flex;
+    justify-content: center;
+    padding: top:40px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    margin-top:120px ;
+}
+}
+blockquote{
+	display: flex;
+	justify-content: center;
+	color:#444;
+    text-align: justify;
+	line-height:1.6;
+	margin-top:50px;
+}
+.bg2{
+	margin-top:100px;
+	background:url('../images/bg2.png'); width:100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:auto;
+}
+/*feature*/
+.feature_top{
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+/*information*/
+.section {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 70vh;
+
+    /* For text formatting. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-1px) scale(1.5);
+    /* Force the background image to fill the whole element. */
+    background-size: 100%;
+    /* Keep the image from overlapping sibling elements. */
+    z-index: -1;
+}
+
+
+/* The styling for the static div. */
+.static {
+    background: rgb(0, 15, 24);
+
+
+}
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.bg4::after {
+    background-image: url('../images/tereliye.jpg');
+    background-size: cover;
+}
+
+.bg5::after {
+    background-image: url('../images/tereliye.jpg');
+}
+
+.h1,
+h1 {
+    font-size: 36px;
+    padding-left: 95px;
+    padding-top: -18px;
+    color: #57aaf3;
+}
+.wrapper {
+    /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+    height: 70vh;
+    /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+    overflow-x: hidden;
+    /* Enable scrolling on the page. */
+    overflow-y: auto;
+    /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+    perspective: 2px;
+}
+/*slider carosuel*/
+
+.testimonial-bg{
+    background: linear-gradient(to top, #1e130c , #9a8478);
+}
+.testimonial{
+    margin: 0 15px;
+}
+.testimonial .testimonial-profile{
+    float: left;
+    width: 27%;
+}
+.testimonial .testimonial-profile img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .testimonial-content{
+    padding-left: 30%;
+}
+.testimonial .testimonial-title{
+    margin-bottom:0;
+}
+.testimonial .testimonial-title a{
+    font-size:15px;
+    color: #fff;
+    letter-spacing:3px;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom:4px;
+}
+.testimonial .testimonial-post{
+    display:block;
+    color: #9c9c9c;
+    margin-bottom:10px;
+}
+.testimonial .testimonial-post:after{
+    content:"";
+    width:100%;
+    display: block;
+    margin:10px 0 auto;
+    border-top:1px solid #9c9c9c;
+}
+.testimonial .testimonial-description{
+    color:#9c9c9c;
+    font-size: 14px;
+    line-height:23px;
+}
+.testimonial .social-links{
+    padding:0;
+    margin:0;
+}
+.testimonial .social-links li{
+    list-style:none;
+    margin-right:5px;
+    display:inline-block;
+}
+.testimonial .social-links li a{
+    width:30px;
+    height:30px;
+    line-height:30px;
+    color:#fff;
+    text-align:center;
+    border:1px solid #9c9c9c;
+}
+.testimonial .social-links li a:hover{
+    text-decoration: none;
+}
+.testimonial .social-links li a.fa-instagram:hover{
+    background: #325c86;
+    border-color: #325c86;
+}
+.testimonial .social-links li a.fa-twitter:hover{
+    background: #5ea9dd;
+    border-color: #5ea9dd;
+}
+.testimonial .social-links li a.fa-pinterest:hover{
+    background: #cb2027;
+    border-color: #cb2027;
+}
+.testimonial .social-links li a.fa-linkedin:hover{
+    background: #0177b5;
+    border-color: #0177b5;
+}
+.owl-pagination{
+    margin-top: 40px;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+    background:#3F4144;
+    border:3px solid #fff;
+}
+@media only screen and (max-width: 767px) {
+    .testimonial{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .testimonial .testimonial-content{
+        padding: 0;
+    }
+    .testimonial .testimonial-profile{
+        float:none;
+        width: 30%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+/*chef*/
+.our-team-wrapper{
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 4px 0px rgba(0, 0 , 0, .08);
+    
+    
+}
+.thumbnail{
+    height: 300px;
+    width: 300px; 
+    padding:5px;
+}
+.content{
+    position: absolute;
+    bottom: -85px;
+    background: #eee;
+    width: 100%;
+    transition: all 1s ease; 
+}
+.our-team-wrapper:hover .content{
+    position: absolute;
+    bottom: -11px;
+    background: #eee;
+    width: 100%;
+    transition: all 1s ease; 
+}
+
+.content .our-team-name{
+    padding: 10px;
+    color:#009688;
+    text-align: center;
+    font-size: 1.8rem;
+    
+}
+.content .our-team-name .small{
+    display: block;
+    color: #9e9e9e;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+ul.our-team-contact{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+ul.our-team-contact li{
+    margin:0 15px;
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff ;
+}
+
+ul.our-team-contact li.facebook{
+background:#3b5998;
+}
+
+
+ul.our-team-contact li.twitter{
+background: #1da1f2;
+}
+
+ul.our-team-contact li.google{
+background:#dd4b39;
+}
+#book .row{
+    margin-top: 120px;
+}
+.heading-section{
+    margin-bottom: -100px;
+}
+.chef_padd{
+	padding:10px;
+}
+/*footer*/
+footer{
+    padding: 100px;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    position: relative;
+}
+/*div for scroll*/
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: black;
+    float: right;
+    position: absolute;
+    right: 20px;  
+    bottom: 10px;
+}
+.circle p{
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+
+}
+/*reservation*/
+.modal-header{
+	background: #ffa500;
+
+}
+.modal-title{
+	margin-left:125px;
+}
+.modal-content{
+	background: skyblue;
+}
+
+.size
+{
+	width:300px;
+	
+}
+.comment{
+	width:300px;
+	height:150px;
+	
+}
+.reserve
+{
+	margin-left: 50px;
+	padding:10px;
+}
+input::placeholder{
+	font-size: 14px;
+	padding:10px;
+	color:#444;
+}
+.modal-dialog{
+	margin:auto auto;
+	height:300px;
+}
+.modal-body{
+	margin:auto;
+}
+/*menu*/
+.menu-img{
+    width:100%;
+    height:400px;
+    
+}
+.menu-list{
+    width: 85%;
+    height:400px;
+   overflow-y:auto;
+    
+}
+.menu-title{
+    color:#ffa500;
+    display: flex;
+    justify-content: center;
+}
+.food-name hr{
+    margin-top: 5px;
+}
+.food-desc{
+    padding-top: -3px;
+    text-align: justify;
+}
+.menu-mar{
+	margin-top: 30px;
+}
+.card-deck {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 36px;
+    /* background: white; */
+}
+.owl-carousel.owl-loaded {
+    display: block;
+    margin-top: 43px;
+}
+.menu_scroll_pad h3{
+     display: flex;
+     justify-content: center;
+     color: #ffa500;
+}
